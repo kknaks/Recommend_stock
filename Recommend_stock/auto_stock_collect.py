@@ -1,3 +1,15 @@
+import re
+import time
+import pandas as pd
+import json
+import requests
+import numpy as np
+import seaborn as sns
+import statsmodels.api as sm
+from bs4 import BeautifulSoup
+from tqdm import tqdm
+from datetime import datetime
+
 #당일 시가 정보 불러오기
 def find_gap(stock_code):
         time.sleep(0.05)
